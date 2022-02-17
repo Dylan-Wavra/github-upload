@@ -1,0 +1,297 @@
+body {
+  font-family: 'Raleway', sans-serif, 'Times New Roman', Times, serif;
+}
+
+h1,
+h3,
+h5 {
+  color: #6b6b6b;
+}
+
+h2 { color: #222222;}
+
+p {
+  color: #999;
+  font-size: 14px;
+}
+
+.main-container {
+  display: grid;
+  margin: 0px auto;
+  padding: 0px 15px;
+  grid-gap: 0px;
+  max-width: 1200px;
+}
+
+/*Navbar section*/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+nav > div,
+.minimalista > div {
+  padding: 5px;
+  margin: auto 5px;
+}
+
+.navbar > div:nth-child(1) {
+  margin-right: auto;
+}
+
+.minimalista {
+  display: flex;
+}
+
+.fa-regular {
+  font-size: 35px;
+  width: 44px;
+  height: 50px;
+  padding: 9px 0px 0px 15px;
+  border-radius: 60px;
+  color: white;
+  background-color: #222222;
+}
+
+.minimalista > .m:hover,
+nav > .home:hover,
+nav > .aboutus-nav:hover,
+nav > .contact:hover {
+  text-decoration: underline;
+}
+
+/*About Us section*/
+.aboutus-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  padding: 60px 0px 50px 0px;
+  row-gap: 10px;
+}
+
+h1,
+.aboutus-container p {
+  margin: 0px;
+  padding-bottom: 0px;
+}
+
+h1 { font-size: 60px;}
+
+.aboutus-container p,
+h4 {
+  font-size: 13px;
+  color: #141414;
+  font-weight: 900;
+}
+
+/*Rooms section*/
+.rooms-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
+  text-align: left;
+  justify-content: center;
+  gap: 35px;
+  margin: 15px 15px;
+}
+
+.roomonepic,
+.roomtwopic,
+.roomthreepic {
+  width: 320px;
+  height: auto;
+}
+
+/*Our Team (header) section*/
+.ourteam-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  padding: 55px 0px 30px 0px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.ourteam-container p {
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
+/*Employees section*/
+
+.employees-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-content: space-around;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/*
+.employees-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  text-align: center;
+  align-content: space-around;
+  justify-content: center;
+}*/
+
+.melissapic,
+.frankpic,
+.janepic,
+.markpic {
+  max-width: 160px;
+  height: auto;
+}
+
+.leftarrow,
+.rightarrow {
+  align-self: center;
+}
+
+.leftarrow {
+  justify-self: right;
+  margin-right: 20px;
+}
+
+.rightarrow {
+  justify-self: left;
+  margin-left: 20px;
+}
+
+h4 {
+  margin: 13px 0px 8px 13px;
+  text-align: left;
+}
+
+.fa-solid {
+  align-self: center;
+  justify-self: center;
+  max-width: 80px;
+}
+
+
+/*Socials section*/
+.bottom-container {
+  background-color: #282828; 
+  color: #777;
+  margin-top: 80px;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.facebook,
+.twitter,
+.instagram,
+.linkedin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h5 {
+  padding-left: 5px;
+  padding-right: 15px;
+}
+
+a:link {text-decoration: none;}
+
+/*icons*/
+i {
+  color: #cecdcd;
+  padding: 0px 2px 0px 2px;
+}
+
+.melissa-links,
+.frank-links,
+.jane-links,
+.mark-links {
+  display: flex;
+  padding-left: 13px;
+}
+
+/*Contact section*/
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  text-align: center;
+  padding: 65px 0px;
+  border-bottom: 0.5px solid rgb(78, 77, 77);
+}
+
+.addressheader,
+.emailheader,
+.phoneheader {
+  color: white;
+}
+
+/*Footer section*/
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.footer-container p { font-size: 10px;}
+
+
+@media (max-width: 768px) {
+  .rooms-container {
+    gap: 45px;
+    margin: 15px 15px;
+  }
+
+  .leftarrow {
+    margin-right: 5px;
+  }
+  
+  .rightarrow {
+    margin-left: 5px;
+  }
+
+.employees-container {
+  gap: 0px
+}
+
+.melissa-container {
+  margin: 15px 45px 0px 21px;
+}
+
+.frank-container,
+.jane-container {
+  margin: 15px 40px 15px 40px;
+}
+
+.mark-container {
+  margin: 15px 21px 0px 45px;
+}
+
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 2px;
+  }
+  
+  nav > div,
+  .minimalista > div {
+    padding: 2px;
+    margin: auto 2px;
+  }
+}
